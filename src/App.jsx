@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //pages
 import HomePage from "./pages/Homepage"
-import ContactPage from "./pages/ContactPage"
-import Products from "./pages/Products"
-import Product from "./pages/Product"
+import AboutUs from "./pages/ContactPage"
+import Posts from './pages/posts/Posts';
+import SinglePost from './pages/posts/SinglePost';
 
 
 //layouts
@@ -19,9 +19,9 @@ function App() {
         <Routes>
           <Route Component={DefaultLayout}>
             <Route path="/" Component={HomePage} />
-            <Route path="/contact" Component={ContactPage} />
-            <Route path="/products" Component={Products} />
-            <Route path="/products/:id" Component={Product} />
+            <Route path="/contact" Component={AboutUs} />
+            <Route path="/products" Component={Posts} />
+            <Route path="/products/:id" Component={SinglePost} />
           </Route>
         </Routes>
       </BrowserRouter>
