@@ -1,8 +1,10 @@
 const AboutUs = () => {
     return (
         <>
-            <main className="container">
-                <h1 className="text-center">About Us</h1>
+            <main className="viewport">
+                <div className="container">
+                    <h1 className="text-center">About Us</h1>
+                </div>
             </main>
         </>
     );
